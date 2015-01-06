@@ -51,7 +51,7 @@ Select the Downloaded campaign and click on post button
 Changes are live
 ----------------
 
-Your campaigns have now been successfully uploaded to your adwords account. For any support reach us at sales [at] AdMasterMind.com 
+Your campaigns have now been successfully uploaded to your adwords account. For any support reach us at sales [at] AdNabu.com 
 
 Reference
 ---------

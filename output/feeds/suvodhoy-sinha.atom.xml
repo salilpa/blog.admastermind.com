@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>AdNabu</title><link href="https://blog.adnabu.com/" rel="alternate"></link><link href="https://blog.adnabu.com/feeds/suvodhoy-sinha.atom.xml" rel="self"></link><id>https://blog.adnabu.com/</id><updated>2015-01-05T20:00:00+05:30</updated><entry><title>How to configure monitoring using pingdom and adnabu</title><link href="https://blog.adnabu.com/how-to-configure-monitoring-using-pingdom-and-adnabu.html" rel="alternate"></link><updated>2015-01-05T20:00:00+05:30</updated><author><name>Suvodhoy Sinha</name></author><id>tag:blog.adnabu.com,2015-01-05:how-to-configure-monitoring-using-pingdom-and-adnabu.html</id><summary type="html">&lt;p&gt;The following is a step by step procedure on how to setup a &lt;a href="http://www.adnabu.com/products/monitor"&gt;monitoring check&lt;/a&gt; in pingdom and configuring an alerting webhook.&lt;/p&gt;
+&lt;h2&gt;Register in Adnabu&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.adnabu.com/accounts/register/" title="AdNabu signup link"&gt;Register&lt;/a&gt; in AdNabu or &lt;a href="http://www.adnabu.com/accounts/login/" title="AdNabu login link"&gt;login&lt;/a&gt; if you already have an account.&lt;/p&gt;
+&lt;h2&gt;Link your Google Oauth&lt;/h2&gt;
+&lt;p&gt;Click on the &lt;strong&gt;Google Oauth&lt;/strong&gt; tab in the nav bar or go to the following &lt;a href="http://www..adnabu.com/googleoauth/"&gt;link&lt;/a&gt;. Link your &lt;strong&gt;Google Oauth&lt;/strong&gt; after reading the instructions carefully. 
+Please note this is an important step in getting your secret key generated for your adwords account/accounts.&lt;/p&gt;
+&lt;h2&gt;Enable Campaign Monitoring&lt;/h2&gt;
+&lt;p&gt;If you have successfully linked your &lt;strong&gt;Google Oauth&lt;/strong&gt; account, you will be able to go to the &lt;a href="http://www.adnabu.com/monitor/"&gt;monitoring dashboard&lt;/a&gt;. 
+The dashboard will contain your adwords account details or in case of an MCC account all your accounts details.
+You can select which accounts you want to enable for monitoring. Once enabled you will be able to see the generated url along with the secret key which will serve as your alerting endpoint.&lt;/p&gt;
+&lt;h2&gt;Signup in Pingdom&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.pingdom.com/signup/" title="Pingdom signup link"&gt;Signup&lt;/a&gt; in Pingdom or &lt;a href="https://my.pingdom.com/" title="Pingdom login link"&gt;login&lt;/a&gt; if you previously have a pingdom account. 
+In case you want to try out, you can &lt;a href="https://www.pingdom.com/free" title="Pingdom free signup"&gt;signup free&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pingdom Free Signup" src="https://blog.adnabu.com/images/tutorial/pingdom/free_signup.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Once logged in you will be prompted to fill in some basic details.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pingdom Personal Details" src="https://blog.adnabu.com/images/tutorial/pingdom/basic_details.png" /&gt;
+&lt;img alt="Pingdom Timezone Details" src="https://blog.adnabu.com/images/tutorial/pingdom/timezone_details.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Create an Alerting Webhook&lt;/h2&gt;
+&lt;p&gt;On the left sidebar you will see a tab called &lt;strong&gt;Alerting&lt;/strong&gt;. Click on it and then click &lt;strong&gt;Alerting Endpoints&lt;/strong&gt;. You will be have the following view on your screen. 
+You can directly navigate to this &lt;a href="https://my.pingdom.com/newims/externalendpoints" title="Pingdom Alerting Endpoints"&gt;link&lt;/a&gt; to access this page.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alerting Endpoints" src="https://blog.adnabu.com/images/tutorial/pingdom/alerting_endpoint_page.png" /&gt;&lt;/p&gt;
+&lt;p&gt;On the right hand top corner you will see a button to &lt;strong&gt;Add New&lt;/strong&gt; endpoint. Click on it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="New Alerting Endpoint" src="https://blog.adnabu.com/images/tutorial/pingdom/new_endpoint.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Give a name to it and click on &lt;strong&gt;Add Contact Method&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Contact Method" src="https://blog.adnabu.com/images/tutorial/pingdom/contact_method.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Select the contact method as &lt;strong&gt;URL/WEBHOOK&lt;/strong&gt; and paste the url as provided by the AdNabu details page. Please note the url is encoded and has to pasted as it is.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Final Contact Method View" src="https://blog.adnabu.com/images/tutorial/pingdom/final_contact_box.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Click on &lt;strong&gt;Save Settings&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Final Endpoint View" src="https://blog.adnabu.com/images/tutorial/pingdom/final_endpoint_view.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Creating a Check&lt;/h2&gt;
+&lt;p&gt;Go to the left sidebar and click on &lt;a href="https://my.pingdom.com/dashboard/checks"&gt;Dashboard&lt;/a&gt;. On the top right hand corner you will find an option to &lt;strong&gt;Add New&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Give a name to your check and your site url.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Adding New Check" src="https://blog.adnabu.com/images/tutorial/pingdom/new_check.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Scroll down to choose an alert policy. Select &lt;strong&gt;Extremely Critical&lt;/strong&gt;. Currently the alert will be assigned to the user who created the check. Hover over the policy to find the &lt;strong&gt;Edit&lt;/strong&gt; button on the right.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Choose Alert Policy" src="https://blog.adnabu.com/images/tutorial/pingdom/choose_alert_policy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;On the edit page click on the small arrow and click edit.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Edit Alert Policy" src="https://blog.adnabu.com/images/tutorial/pingdom/edit_policy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Under &lt;strong&gt;Assign to&lt;/strong&gt; remove the user and add the alerting endpoint.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Assign Webhook" src="https://blog.adnabu.com/images/tutorial/pingdom/assign_webhook.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Click on save and your settings are complete. You can open the check and confirm if your settings are all in place.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Final Settings View" src="https://blog.adnabu.com/images/tutorial/pingdom/final_check_view.png" /&gt;&lt;/p&gt;</summary><category term="pingdom"></category><category term="tutorial"></category><category term="monitoring"></category><category term=""></category></entry></feed>
