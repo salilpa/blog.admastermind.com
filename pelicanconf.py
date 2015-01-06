@@ -22,9 +22,9 @@ LINKS = (('AdNabu', 'https://adnabu.com/'),)
 
 # Social widget
 SOCIAL = (
-    ("Facebook", "https://www.facebook.com/admastermind"),
-    ("Google+", "https://plus.google.com/+AdmastermindCom"),
-    ("Twitter", "https://twitter.com/admastermindcom"),)
+    ("Facebook", "https://www.facebook.com/adnabu"),
+    ("Google+", "https://plus.google.com/+AdnabuOfficial"),
+    ("Twitter", "https://twitter.com/adnabu"),)
 
 DEFAULT_PAGINATION = 10
 

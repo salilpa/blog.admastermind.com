@@ -41,7 +41,7 @@
 {% block metadesc %}
 {% if article.description %}{{ article.description|e }}
 {% elif article.summary %}{{ article.summary|e }}
-{% else%}An article in AdMasterMind blog called {{ article.title|e }}
+{% else%}An article in AdNabu blog called {{ article.title|e }}
 {% endif %}
 {% endblock %}
 
@@ -55,6 +55,6 @@
     {{ tag }},
 {% endfor %}
 {% else%}
-admastermind, blog, ppc, adwords tools, adwords scripts, adwords campaigns
+adnabu, blog, ppc, adwords tools, adwords scripts, adwords campaigns
 {% endif %}
 {% endblock %}
