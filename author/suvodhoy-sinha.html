@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>AdNabu - Suvodhoy Sinha</title>
+        <link rel="stylesheet" href="https://blog.adnabu.com/theme/css/main.css" />
+        <link rel="icon" type="image/png" href="https://blog.adnabu.com/favicon.ico" />
+        <script src="//load.sumome.com/" data-sumo-site-id="5c3a29f74b6392781f3aaae4ffffaa23c153d8c18cd3d72216dad73745deaeea" async></script>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFTTVM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFTTVM');</script>
+<!-- End Google Tag Manager -->
+        <header id="banner" class="body">
+                <h1><a href="https://blog.adnabu.com/">AdNabu </a></h1>
+                <nav><ul>
+                    <li><a href="https://www.adnabu.com">AdNabu</a></li>
+                    <li><a href="https://blog.adnabu.com/pages/about-us.html">About us</a></li>
+                    <li><a href="https://blog.adnabu.com/category/campaigns.html">campaigns</a></li>
+                    <li><a href="https://blog.adnabu.com/category/introduction.html">introduction</a></li>
+                    <li><a href="https://blog.adnabu.com/category/tutorials.html">tutorials</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://blog.adnabu.com/how-to-configure-monitoring-using-pingdom-and-adnabu.html">How to configure monitoring using pingdom and adnabu</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-01-05T20:00:00">
+                Published: Mon 05 January 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://blog.adnabu.com/author/suvodhoy-sinha.html">Suvodhoy Sinha</a>
+        </address>
+<p>In <a href="https://blog.adnabu.com/category/tutorials.html">tutorials</a>. </p>
+<p>tags: <a href="https://blog.adnabu.com/tag/pingdom.html">pingdom</a> <a href="https://blog.adnabu.com/tag/tutorial.html">tutorial</a> <a href="https://blog.adnabu.com/tag/monitoring.html">monitoring</a> <a href="https://blog.adnabu.com/tag/.html"></a> </p>
+</footer><!-- /.post-info --><p>The following is a step by step procedure on how to setup a <a href="http://www.adnabu.com/products/monitor">monitoring check</a> in pingdom and configuring an alerting webhook.</p>
+<h2>Register in Adnabu</h2>
+<p><a href="https://www.adnabu.com/accounts/register/" title="AdNabu signup link">Register</a> in AdNabu or <a href="http://www.adnabu.com/accounts/login/" title="AdNabu login link">login</a> if you already have an account.</p>
+<h2>Link your Google Oauth</h2>
+<p>Click on the <strong>Google Oauth</strong> tab in the nav bar or go to the following <a href="http://www..adnabu.com/googleoauth/">link</a>. Link your <strong>Google Oauth</strong> after reading the instructions carefully. 
+Please note this is an important step in getting your secret key generated for your adwords account/accounts.</p>
+<h2>Enable Campaign Monitoring</h2>
+<p>If you have successfully linked your <strong>Google Oauth</strong> account, you will be able to go to the <a href="http://www.adnabu.com/monitor/">monitoring dashboard</a>. 
+The dashboard will contain your adwords account details or in case of an MCC account all your accounts details.
+You can select which accounts you want to enable for monitoring. Once enabled you will be able to see the generated url along with the secret key which will serve as your alerting endpoint.</p>
+<h2>Signup in Pingdom</h2>
+<p><a href="https://www.pingdom.com/signup/" title="Pingdom signup link">Signup</a> in Pingdom or <a href="https://my.pingdom.com/" title="Pingdom login link">login</a> if you previously have a pingdom account. 
+In case you want to try out, you can <a href="https://www.pingdom.com/free" title="Pingdom free signup">signup free</a></p>
+<p><img alt="Pingdom Free Signup" src="https://blog.adnabu.com/images/tutorial/pingdom/free_signup.png" /></p>
+<p>Once logged in you will be prompted to fill in some basic details.</p>
+<p><img alt="Pingdom Personal Details" src="https://blog.adnabu.com/images/tutorial/pingdom/basic_details.png" />
+<img alt="Pingdom Timezone Details" src="https://blog.adnabu.com/images/tutorial/pingdom/timezone_details.png" /></p>
+<h2>Create an Alerting Webhook</h2>
+<p>On the left sidebar you will see a tab called <strong>Alerting</strong>. Click on it and then click <strong>Alerting Endpoints</strong>. You will be have the following view on your screen. 
+You can directly navigate to this <a href="https://my.pingdom.com/newims/externalendpoints" title="Pingdom Alerting Endpoints">link</a> to access this page.</p>
+<p><img alt="Alerting Endpoints" src="https://blog.adnabu.com/images/tutorial/pingdom/alerting_endpoint_page.png" /></p>
+<p>On the right hand top corner you will see a button to <strong>Add New</strong> endpoint. Click on it.</p>
+<p><img alt="New Alerting Endpoint" src="https://blog.adnabu.com/images/tutorial/pingdom/new_endpoint.png" /></p>
+<p>Give a name to it and click on <strong>Add Contact Method</strong>.</p>
+<p><img alt="Contact Method" src="https://blog.adnabu.com/images/tutorial/pingdom/contact_method.png" /></p>
+<p>Select the contact method as <strong>URL/WEBHOOK</strong> and paste the url as provided by the AdNabu details page. Please note the url is encoded and has to pasted as it is.</p>
+<p><img alt="Final Contact Method View" src="https://blog.adnabu.com/images/tutorial/pingdom/final_contact_box.png" /></p>
+<p>Click on <strong>Save Settings</strong>.</p>
+<p><img alt="Final Endpoint View" src="https://blog.adnabu.com/images/tutorial/pingdom/final_endpoint_view.png" /></p>
+<h2>Creating a Check</h2>
+<p>Go to the left sidebar and click on <a href="https://my.pingdom.com/dashboard/checks">Dashboard</a>. On the top right hand corner you will find an option to <strong>Add New</strong>.</p>
+<p>Give a name to your check and your site url.</p>
+<p><img alt="Adding New Check" src="https://blog.adnabu.com/images/tutorial/pingdom/new_check.png" /></p>
+<p>Scroll down to choose an alert policy. Select <strong>Extremely Critical</strong>. Currently the alert will be assigned to the user who created the check. Hover over the policy to find the <strong>Edit</strong> button on the right.</p>
+<p><img alt="Choose Alert Policy" src="https://blog.adnabu.com/images/tutorial/pingdom/choose_alert_policy.png" /></p>
+<p>On the edit page click on the small arrow and click edit.</p>
+<p><img alt="Edit Alert Policy" src="https://blog.adnabu.com/images/tutorial/pingdom/edit_policy.png" /></p>
+<p>Under <strong>Assign to</strong> remove the user and add the alerting endpoint.</p>
+<p><img alt="Assign Webhook" src="https://blog.adnabu.com/images/tutorial/pingdom/assign_webhook.png" /></p>
+<p>Click on save and your settings are complete. You can open the check and confirm if your settings are all in place.</p>
+<p><img alt="Final Settings View" src="https://blog.adnabu.com/images/tutorial/pingdom/final_check_view.png" /></p><p>There are <a href="https://blog.adnabu.com/how-to-configure-monitoring-using-pingdom-and-adnabu.html#disqus_thread">comments</a>.</p>                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="https://adnabu.com/">AdNabu</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.facebook.com/adnabu">Facebook</a></li>
+                            <li><a href="https://plus.google.com/+AdnabuOfficial">Google+</a></li>
+                            <li><a href="https://twitter.com/adnabu">Twitter</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'adnabu';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
