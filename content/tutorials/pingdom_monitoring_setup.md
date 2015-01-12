@@ -1,22 +1,30 @@
-Title: How to configure monitoring using pingdom and adnabu
+Title: How to configure monitoring using Pingdom and AdNabu
 Date: 2015-01-05 20:00
 Category: tutorials
 Tags: pingdom, tutorial, monitoring, 
 Author: Suvodhoy Sinha
-Summary: This tutorial shows how to setup monitoring using pingdom
+Summary: This tutorial shows how to setup monitoring using Pingdom
 
-The following is a step by step procedure on how to setup a [monitoring check](http://www.adnabu.com/products/monitor) in pingdom and configuring an alerting webhook.
+The following is a step by step procedure on how to setup a [monitoring check](http://www.adnabu.com/products/monitor) in Pingdom and configuring an alerting webhook.
 
-Register in Adnabu
+Register in AdNabu
 ------------------
 
-[Register](https://www.adnabu.com/accounts/register/ "AdNabu signup link") in AdNabu or [login](http://www.adnabu.com/accounts/login/ "AdNabu login link") if you already have an account.
+![Adnabu Main Site]({filename}/images/tutorial/pingdom/main_site.png)
+
+[Register](https://www.adnabu.com/accounts/register/ "AdNabu signup link") 
+
+![Adnabu Registration Box]({filename}/images/tutorial/pingdom/registration_form.png)
+
+or [Login](http://www.adnabu.com/accounts/login/ "AdNabu login link") if you already have an account.
+
+![Adnabu Login Box]({filename}/images/tutorial/pingdom/login_form.png)
 
 Link your Google Oauth
 ----------------------
 
-Click on the **Google Oauth** tab in the nav bar or go to the following [link](http://www..adnabu.com/googleoauth/). Link your **Google Oauth** after reading the instructions carefully. 
-Please note this is an important step in getting your secret key generated for your adwords account/accounts.
+Click on the **Google Oauth** tab in the navigation bar or go to the following [link](http://www..adnabu.com/googleoauth/). Link your **Google Oauth** after reading the instructions carefully. 
+Please note this is an important step in getting your secret key generated for your AdWords account/accounts.
 
 Enable Campaign Monitoring
 --------------------------

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AdNabu</title><link>https://blog.adnabu.com/</link><description></description><atom:link href="https://blog.adnabu.com/feeds/suvodhoy-sinha.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 05 Jan 2015 20:00:00 +0530</lastBuildDate><item><title>How to configure monitoring using pingdom and adnabu</title><link>https://blog.adnabu.com/how-to-configure-monitoring-using-pingdom-and-adnabu.html</link><description>&lt;p&gt;The following is a step by step procedure on how to setup a &lt;a href="http://www.adnabu.com/products/monitor"&gt;monitoring check&lt;/a&gt; in pingdom and configuring an alerting webhook.&lt;/p&gt;
-&lt;h2&gt;Register in Adnabu&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.adnabu.com/accounts/register/" title="AdNabu signup link"&gt;Register&lt;/a&gt; in AdNabu or &lt;a href="http://www.adnabu.com/accounts/login/" title="AdNabu login link"&gt;login&lt;/a&gt; if you already have an account.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AdNabu</title><link>https://blog.adnabu.com/</link><description></description><atom:link href="https://blog.adnabu.com/feeds/suvodhoy-sinha.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 05 Jan 2015 20:00:00 +0530</lastBuildDate><item><title>How to configure monitoring using Pingdom and AdNabu</title><link>https://blog.adnabu.com/how-to-configure-monitoring-using-pingdom-and-adnabu.html</link><description>&lt;p&gt;The following is a step by step procedure on how to setup a &lt;a href="http://www.adnabu.com/products/monitor"&gt;monitoring check&lt;/a&gt; in Pingdom and configuring an alerting webhook.&lt;/p&gt;
+&lt;h2&gt;Register in AdNabu&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Adnabu Main Site" src="https://blog.adnabu.com/images/tutorial/pingdom/main_site.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.adnabu.com/accounts/register/" title="AdNabu signup link"&gt;Register&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Adnabu Registration Box" src="https://blog.adnabu.com/images/tutorial/pingdom/registration_form.png" /&gt;&lt;/p&gt;
+&lt;p&gt;or &lt;a href="http://www.adnabu.com/accounts/login/" title="AdNabu login link"&gt;Login&lt;/a&gt; if you already have an account.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Adnabu Login Box" src="https://blog.adnabu.com/images/tutorial/pingdom/login_form.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;Link your Google Oauth&lt;/h2&gt;
-&lt;p&gt;Click on the &lt;strong&gt;Google Oauth&lt;/strong&gt; tab in the nav bar or go to the following &lt;a href="http://www..adnabu.com/googleoauth/"&gt;link&lt;/a&gt;. Link your &lt;strong&gt;Google Oauth&lt;/strong&gt; after reading the instructions carefully. 
-Please note this is an important step in getting your secret key generated for your adwords account/accounts.&lt;/p&gt;
+&lt;p&gt;Click on the &lt;strong&gt;Google Oauth&lt;/strong&gt; tab in the navigation bar or go to the following &lt;a href="http://www..adnabu.com/googleoauth/"&gt;link&lt;/a&gt;. Link your &lt;strong&gt;Google Oauth&lt;/strong&gt; after reading the instructions carefully. 
+Please note this is an important step in getting your secret key generated for your AdWords account/accounts.&lt;/p&gt;
 &lt;h2&gt;Enable Campaign Monitoring&lt;/h2&gt;
 &lt;p&gt;If you have successfully linked your &lt;strong&gt;Google Oauth&lt;/strong&gt; account, you will be able to go to the &lt;a href="http://www.adnabu.com/monitor/"&gt;monitoring dashboard&lt;/a&gt;. 
 The dashboard will contain your adwords account details or in case of an MCC account all your accounts details.
