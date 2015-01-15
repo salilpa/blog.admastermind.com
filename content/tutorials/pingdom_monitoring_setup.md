@@ -23,7 +23,7 @@ or [Login](http://www.adnabu.com/accounts/login/ "AdNabu login link") if you alr
 Link your Google Oauth
 ----------------------
 
-Click on the **Google Oauth** tab in the navigation bar or go to the following [link](http://www..adnabu.com/googleoauth/). Link your **Google Oauth** after reading the instructions carefully. 
+Click on the **Google Oauth** tab in the navigation bar or go to the following [link](http://www.adnabu.com/googleoauth/). Link your **Google Oauth** after reading the instructions carefully. 
 Please note this is an important step in getting your secret key generated for your AdWords account/accounts.
 
 Enable Campaign Monitoring
