@@ -7,29 +7,21 @@ Summary: This tutorial shows how to setup monitoring using Pingdom
 
 The following is a step by step procedure on how to setup a [monitoring check](http://www.adnabu.com/products/monitor) in Pingdom and configuring an alerting webhook.
 
-Register in AdNabu
-------------------
+Login to AdNabu
+---------------
 
 ![Adnabu Main Site]({filename}/images/tutorial/pingdom/main_site.png)
 
-[Register](https://www.adnabu.com/accounts/register/ "AdNabu signup link") 
+[Login](http://www.adnabu.com/accounts/login/ "AdNabu login link") if you already have an account.
 
-![Adnabu Registration Box]({filename}/images/tutorial/pingdom/registration_form.png)
-
-or [Login](http://www.adnabu.com/accounts/login/ "AdNabu login link") if you already have an account.
-
+<!--
 ![Adnabu Login Box]({filename}/images/tutorial/pingdom/login_form.png)
-
-Link your Google Oauth
-----------------------
-
-Click on the **Google Oauth** tab in the navigation bar or go to the following [link](http://www.adnabu.com/googleoauth/). Link your **Google Oauth** after reading the instructions carefully. 
-Please note this is an important step in getting your secret key generated for your AdWords account/accounts.
+-->
 
 Enable Campaign Monitoring
 --------------------------
 
-If you have successfully linked your **Google Oauth** account, you will be able to go to the [monitoring dashboard](http://www.adnabu.com/monitor/). 
+Once Logged in, you will be able to go to the [monitoring dashboard](https://www.adnabu.com/tools/monitor/ "Campaign Monitor"). 
 The dashboard will contain your adwords account details or in case of an MCC account all your accounts details.
 You can select which accounts you want to enable for monitoring. Once enabled you will be able to see the generated url along with the secret key which will serve as your alerting endpoint.
 
