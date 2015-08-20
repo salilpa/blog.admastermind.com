@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, storm damage repair
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for storm damage repair
 Gumroad: iWnrh
+Status: draft
 
 Storm Damage Repair are services given to repair houses and other property damaged during a natural calamity like flood or storm.
 

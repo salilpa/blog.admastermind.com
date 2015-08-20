@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, window installation
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for window installation
 Gumroad: bfom
+Status: draft
 
 Window installation service is provided across United States to install top quality windows which provide protection from storms and severe weather. Usually window installation comes with vinyl and wood finishes
 

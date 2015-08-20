@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, email marketing software
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for email marketing software
 Gumroad: SFzjx
+Status: draft
 
 Email Marketing Software allows people to send email in large quantities to a targeted group of users. They usually comes along with an option to create mailing lists and can store additional information about the user such as location, age etc.
 

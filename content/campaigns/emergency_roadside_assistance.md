@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, emergency roadside assistance
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for emergency roadside assistance
 Gumroad: aWUL
+Status: draft
 
 Emergency Roadside Assistance are services provided to motorists or cyclists whose vehicles have suffered mechanical failure that leaves them stranded. The services iclude helping in jump starting, towing and changing flat tires.
 

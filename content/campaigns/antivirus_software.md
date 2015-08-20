@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, antivirus software
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for Antivirus Software/Program
 Gumroad: DBmbW
+Status: draft
 
 Antivirus software is a computer software which is installed to prevent, detect and remove malicious softwares like viruses, malware, worms, spyware, trojans etc
 

@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, plumbing service
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for plumbing service
 Gumroad: vwtT
+Status: draft
 
 Plumbing Services are an array of various services related to installing, repairing and fixing plumbing systems.
 

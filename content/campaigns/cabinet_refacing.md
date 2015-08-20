@@ -5,6 +5,7 @@ Tags: online marketing, google adwords campaigns, cabinet refacing
 Author: Salil Panikkaveettil
 Summary: How to create efficient online marketing campaigns for cabinet refacing
 Gumroad: vSfe
+Status: draft
 
 Window installation service is provided across United States to install top quality windows which provide protection from storms and severe weather. Usually cabinet refacing comes with vinyl and wood finishes
 
