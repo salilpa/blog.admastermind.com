@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>AdNabu - automated adwords reports</title>
+        <link rel="stylesheet" href="https://blog.adnabu.com/theme/css/main.css" />
+        <link rel="icon" type="image/png" href="https://blog.adnabu.com/favicon.ico" />
+        <script src="//load.sumome.com/" data-sumo-site-id="5c3a29f74b6392781f3aaae4ffffaa23c153d8c18cd3d72216dad73745deaeea" async></script>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFTTVM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFTTVM');</script>
+<!-- End Google Tag Manager -->
+        <header id="banner" class="body">
+                <h1><a href="https://blog.adnabu.com/">AdNabu </a></h1>
+                <nav><ul>
+                    <li><a href="https://www.adnabu.com">AdNabu</a></li>
+                    <li><a href="https://blog.adnabu.com/pages/about-us.html">About us</a></li>
+                    <li><a href="https://blog.adnabu.com/category/adwords.html">adwords</a></li>
+                    <li><a href="https://blog.adnabu.com/category/introduction.html">introduction</a></li>
+                    <li><a href="https://blog.adnabu.com/category/tutorials.html">tutorials</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html">How to send automated adwords reports as email periodically</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-08-20T17:00:00+05:30">
+                Published: Thu 20 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://blog.adnabu.com/author/salil-panikkaveettil.html">Salil Panikkaveettil</a>
+        </address>
+<p>In <a href="https://blog.adnabu.com/category/adwords.html">adwords</a>. </p>
+<p>tags: <a href="https://blog.adnabu.com/tag/google-adwords-reporting-tool.html">google adwords reporting tool</a> <a href="https://blog.adnabu.com/tag/tutorial.html">tutorial</a> <a href="https://blog.adnabu.com/tag/automated-adwords-reports.html">automated adwords reports</a> </p>
+</footer><!-- /.post-info --><p>Every marketer wants to be on top of their data as frequently as it is possible. In an extremely dynamic environment like 
+AdWords, Its important to be up to date with your campaigns almost daily. Let us look at the most common reports that AdWords 
+experts track and steps to automate them.</p>
+<h2>AdWords Report Types</h2>
+<p>Here are the top reports in no particular order</p>
+<ul>
+<li>Account Performance Report</li>
+<li>Campaign Performance Report</li>
+<li>Ad Group Performance Report</li>
+<li>Keyword Performance Report</li>
+<li>Search Term Performance Report</li>
+</ul>
+<p>Out of these reports, the one report i track daily is the campaign performance report. This report gives a bird's eye view of all
+the campaigns running in your account and gives an early indication of things going wrong. </p>
+<p>For eg : Nabu has 3 campaigns running for his hotel. One fine day he sees the following AdWords report for the last
+30 days</p>
+<table>
+<thead>
+<tr>
+<th>Campaign</th>
+<th>Clicks</th>
+<th>Cost</th>
+<th>Cost per Conversion</th>
+<th>Conversions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hotel 1</td>
+<td>200</td>
+<td>100</td>
+<td>5</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Hotel 2</td>
+<td>300</td>
+<td>180</td>
+<td>6</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Hotel 3</td>
+<td>100</td>
+<td>300</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p><code>Hotel 1</code> and <code>Hotel 2</code> Campaigns are almost running at the same cost per conversion but <code>Hotel 3</code> is running at a cost per conversion 
+which is much higher than the other 2. This usually means that there is good amount of improvement that can be done in reducing the cost 
+per conversion of <code>Hotel 3</code> campaign. </p>
+<p>One word of caution here</p>
+<blockquote>
+<p>Never jump to a conclusion with statistically insignificant data.</p>
+</blockquote>
+<p>Let me elaborate the same by changing the values of the report. The new report is as follows</p>
+<table>
+<thead>
+<tr>
+<th>Campaign</th>
+<th>Clicks</th>
+<th>Cost</th>
+<th>Cost per Conversion</th>
+<th>Conversions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hotel 1</td>
+<td>200</td>
+<td>100</td>
+<td>5</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Hotel 2</td>
+<td>300</td>
+<td>180</td>
+<td>6</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Hotel 3</td>
+<td>50</td>
+<td>20</td>
+<td>10</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Here one cannot say with confidence that <code>Hotel 3</code> is not performing well because of the lack of statistical significance.
+As a rule of thumb I look for campaigns with more than 10 conversions for any given period before coming to a conclusion. For 
+campaigns with less than 10 conversions, it makes lot more sense to look at a longer time period. if you were looking at last 30 day,
+have a look at last 90 days and see if the conversions is reaching 10.</p>
+<h2>AdWords Scheduled Emails</h2>
+<h2>AdWords Scripts</h2>
+<h2>AdNabu Reporting for AdWords</h2><p>There are <a href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html#disqus_thread">comments</a>.</p>                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="https://adnabu.com/">AdNabu</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.facebook.com/adnabu">Facebook</a></li>
+                            <li><a href="https://plus.google.com/+AdnabuOfficial">Google+</a></li>
+                            <li><a href="https://twitter.com/adnabu">Twitter</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'adnabu';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>AdNabu - automated email</title>
+        <link rel="stylesheet" href="https://blog.adnabu.com/theme/css/main.css" />
+        <link rel="icon" type="image/png" href="https://blog.adnabu.com/favicon.ico" />
+        <script src="//load.sumome.com/" data-sumo-site-id="5c3a29f74b6392781f3aaae4ffffaa23c153d8c18cd3d72216dad73745deaeea" async></script>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFTTVM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFTTVM');</script>
+<!-- End Google Tag Manager -->
+        <header id="banner" class="body">
+                <h1><a href="https://blog.adnabu.com/">AdNabu </a></h1>
+                <nav><ul>
+                    <li><a href="https://www.adnabu.com">AdNabu</a></li>
+                    <li><a href="https://blog.adnabu.com/pages/about-us.html">About us</a></li>
+                    <li><a href="https://blog.adnabu.com/category/adwords.html">adwords</a></li>
+                    <li><a href="https://blog.adnabu.com/category/introduction.html">introduction</a></li>
+                    <li><a href="https://blog.adnabu.com/category/tutorials.html">tutorials</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html">How to send automated adwords reports as email periodically</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-08-20T17:00:00+05:30">
+                Published: Thu 20 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://blog.adnabu.com/author/salil-panikkaveettil.html">Salil Panikkaveettil</a>
+        </address>
+<p>In <a href="https://blog.adnabu.com/category/adwords.html">adwords</a>. </p>
+<p>tags: <a href="https://blog.adnabu.com/tag/google-adwords-reporting-tool.html">google adwords reporting tool</a> <a href="https://blog.adnabu.com/tag/adwords-scripts.html">adwords scripts</a> <a href="https://blog.adnabu.com/tag/automated-email.html">automated email</a> </p>
+</footer><!-- /.post-info --><p>Every marketer wants to be on top of their data as frequently as it is possible. In an extremely dynamic environment like 
+AdWords, Its important to be up to date with your campaigns almost daily. Let us look at the most common reports that AdWords 
+experts track and steps to automate them.</p>
+<h2>AdWords Report Types</h2>
+<p>Here are the top reports in no particular order</p>
+<ul>
+<li>Account Performance Report</li>
+<li>Campaign Performance Report</li>
+<li>Ad Group Performance Report</li>
+<li>Keyword Performance Report</li>
+<li>Search Term Performance Report</li>
+</ul>
+<p>Out of these reports, the one report i track daily is the campaign performance report. This report gives a bird's eye view of all
+the campaigns running in your account and gives an early indication of things going wrong. </p>
+<h2>AdWords Scheduled Emails</h2>
+<p>AdWords lets you <a href="https://support.google.com/adwords/answer/2404176?hl=en" title="Official AdWords help">schedule reports</a> periodically. 
+Although helpful, there are some serious limitations.</p>
+<ul>
+<li>All emails have a link to download the report from and not the report itself. To download the report, one needs to log in to adwords account.
+This becomes a huge hassle if you are accessing reports from different devices.</li>
+<li>Emails cannot be sent to people without the account access. Although a good security feature, There will be times the reports need to be sent to 
+senior management who necessarily need not have AdWords account access.</li>
+<li>Reports cannot be attached to the emails sent.</li>
+<li>HTML emails are not supported.</li>
+</ul>
+<h2>AdWords Scripts</h2>
+<p>AdWords Scripts solve the serious limitations by providing a programmatic way to retrieve and email data. Main advantages of 
+AdWords Scripts are as follows</p>
+<ul>
+<li>Can send email reports to people who may not have adwords account access.</li>
+<li>Emails can be formatted as simple text or html</li>
+<li>Reports can be attached as pdf, csv reports in the email.</li>
+</ul>
+<p>There are some limitations of AdWords Scripts also</p>
+<ul>
+<li>Need to have programming expertise to create reports</li>
+<li>Using the same reports is a tedious task</li>
+<li>Customizing reports is not easy &amp; takes time and change in the script itself</li>
+<li>A small change in the script has to be replicated across multiple accounts by copy pasting the same code</li>
+</ul>
+<p>Here is a free script for sending last 30 days campaign performance report. <a href="https://github.com/AdNabu/AdWords-Reports-Sample-Script">github</a></p>
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="nx">getCurrentDate</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Campaign&quot;</span><span class="p">,</span> <span class="s2">&quot;Clicks&quot;</span><span class="p">,</span> <span class="s2">&quot;Impressions&quot;</span><span class="p">,</span> <span class="s2">&quot;Conversions&quot;</span><span class="p">,</span> <span class="s2">&quot;Cost&quot;</span><span class="p">,</span><span class="s2">&quot;Cost/conversion&quot;</span><span class="p">];</span>
+  <span class="kd">var</span> <span class="nx">last_30_days</span> <span class="o">=</span> <span class="nx">runReport</span><span class="p">(</span><span class="s2">&quot;LAST_30_DAYS&quot;</span><span class="p">,</span><span class="s2">&quot;CAMPAIGN_PERFORMANCE_REPORT&quot;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">last_30_days_total</span> <span class="o">=</span> <span class="nx">runReport</span><span class="p">(</span><span class="s2">&quot;LAST_30_DAYS&quot;</span><span class="p">,</span><span class="s2">&quot;ACCOUNT_PERFORMANCE_REPORT&quot;</span><span class="p">);</span>
+  <span class="nx">last_30_days_total</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Total&#39;</span><span class="p">;</span>
+  <span class="nx">last_30_days</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">last_30_days_total</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+  <span class="kd">var</span> <span class="nx">last_30_days_html</span> <span class="o">=</span> <span class="nx">arrayToTable</span><span class="p">(</span><span class="nx">last_30_days</span><span class="p">,</span> <span class="nx">titles</span><span class="p">,</span> <span class="s2">&quot;Campaign Stats for Last 30 Days&quot;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="nx">last_30_days_html</span><span class="p">;</span>
+
+  <span class="nx">mail</span><span class="p">(</span><span class="s2">&quot;marketing@adnabu.com&quot;</span><span class="p">,</span> <span class="s2">&quot;AdWords Campaign Stats as on &quot;</span> <span class="o">+</span> <span class="nx">date</span><span class="p">,</span> <span class="nx">content</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">getCurrentDate</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">today</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">dd</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">mm</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="c1">//January is 0!</span>
+  <span class="kd">var</span> <span class="nx">yyyy</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+
+  <span class="k">if</span><span class="p">(</span><span class="nx">dd</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">dd</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="o">+</span><span class="nx">dd</span>
+  <span class="p">}</span> 
+
+  <span class="k">if</span><span class="p">(</span><span class="nx">mm</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">mm</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="o">+</span><span class="nx">mm</span>
+  <span class="p">}</span> 
+
+  <span class="nx">today</span> <span class="o">=</span> <span class="nx">dd</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="nx">mm</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="nx">yyyy</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="nx">today</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">runReport</span><span class="p">(</span><span class="nx">time_range</span><span class="p">,</span><span class="nx">report_type</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">report_type</span> <span class="o">==</span> <span class="s2">&quot;CAMPAIGN_PERFORMANCE_REPORT&quot;</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">select_name</span> <span class="o">=</span> <span class="s2">&quot;CampaignName&quot;</span>
+    <span class="kd">var</span> <span class="nx">report</span> <span class="o">=</span> <span class="nx">AdWordsApp</span><span class="p">.</span><span class="nx">report</span><span class="p">(</span>
+      <span class="s1">&#39;SELECT CampaignName, Clicks, Impressions, ConvertedClicks, Cost, CostPerConvertedClick &#39;</span> <span class="o">+</span>
+      <span class="s1">&#39;FROM &#39;</span> <span class="o">+</span> <span class="nx">report_type</span> <span class="o">+</span> 
+      <span class="s1">&#39; WHERE  Impressions &gt; 0 AND Clicks &gt; 0 AND CampaignStatus = ENABLED &#39;</span><span class="o">+</span>
+      <span class="s1">&#39;DURING &#39;</span> <span class="o">+</span> <span class="nx">time_range</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">report_type</span> <span class="o">==</span> <span class="s2">&quot;ACCOUNT_PERFORMANCE_REPORT&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">select_name</span> <span class="o">=</span> <span class="s2">&quot;AccountDescriptiveName&quot;</span>
+    <span class="kd">var</span> <span class="nx">report</span> <span class="o">=</span> <span class="nx">AdWordsApp</span><span class="p">.</span><span class="nx">report</span><span class="p">(</span>
+      <span class="s1">&#39;SELECT AccountDescriptiveName, Clicks, Impressions, ConvertedClicks, Cost, CostPerConvertedClick &#39;</span> <span class="o">+</span>
+      <span class="s1">&#39;FROM &#39;</span> <span class="o">+</span> <span class="nx">report_type</span> <span class="o">+</span> 
+      <span class="s1">&#39; WHERE  Impressions &gt; 0 AND Clicks &gt; 0 &#39;</span><span class="o">+</span>
+      <span class="s1">&#39;DURING &#39;</span> <span class="o">+</span> <span class="nx">time_range</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">report</span><span class="p">.</span><span class="nx">rows</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">report</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">rows</span><span class="p">.</span><span class="nx">hasNext</span><span class="p">())</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">row</span> <span class="o">=</span> <span class="nx">rows</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">campaignName</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">select_name</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">clicks</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="s1">&#39;Clicks&#39;</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">impressions</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="s1">&#39;Impressions&#39;</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">cost</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="s1">&#39;Cost&#39;</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">conversions</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="s1">&#39;ConvertedClicks&#39;</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">costperConversion</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="s1">&#39;CostPerConvertedClick&#39;</span><span class="p">];</span>
+    <span class="nx">report</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">campaignName</span><span class="p">,</span> <span class="nx">clicks</span><span class="p">,</span> <span class="nx">impressions</span><span class="p">,</span> <span class="nx">conversions</span><span class="p">,</span> <span class="nx">cost</span><span class="p">,</span> <span class="nx">costperConversion</span><span class="p">]);</span>
+  <span class="p">}</span>
+  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">report</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">report</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">mail</span><span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="nx">subject</span><span class="p">,</span> <span class="nx">content</span><span class="p">){</span>
+  <span class="nx">MailApp</span><span class="p">.</span><span class="nx">sendEmail</span><span class="p">({</span>
+    <span class="nx">to</span><span class="o">:</span> <span class="nx">to</span><span class="p">,</span>
+    <span class="nx">subject</span><span class="o">:</span> <span class="nx">subject</span><span class="p">,</span>
+    <span class="nx">htmlBody</span><span class="o">:</span> <span class="nx">content</span><span class="p">,</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">arrayToTable</span><span class="p">(</span><span class="nx">report_array</span><span class="p">,</span> <span class="nx">titles</span><span class="p">,</span> <span class="nx">heading</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">html_table</span> <span class="o">=</span> <span class="s2">&quot;&lt;h2&gt;&quot;</span> <span class="o">+</span> <span class="nx">heading</span> <span class="o">+</span> <span class="s2">&quot;&lt;/h2&gt;&quot;</span><span class="p">;</span>
+
+  <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;table border=&#39;1&#39;&gt;&lt;tr&gt;&quot;</span><span class="p">;</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">titles</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&quot;</span> <span class="o">+</span> <span class="nx">titles</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&lt;/th&gt;&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span><span class="nx">report_array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">k</span><span class="o">&lt;</span><span class="nx">report_array</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">k</span><span class="o">++</span><span class="p">){</span>
+      <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">report_array</span><span class="p">[</span><span class="nx">j</span><span class="p">][</span><span class="nx">k</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">html_table</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/table&gt;&quot;</span><span class="p">;</span>
+  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">html_table</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">html_table</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">sum_array</span><span class="p">(</span><span class="nx">report_array</span><span class="p">){</span>
+
+  <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Total&quot;</span><span class="p">];</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="nx">k</span><span class="o">&lt;</span><span class="nx">report_array</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">k</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">result</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span><span class="nx">report_array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="nx">k</span><span class="o">&lt;</span><span class="nx">report_array</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">k</span><span class="o">++</span><span class="p">){</span>
+      <span class="nx">result</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="o">+</span><span class="p">(</span><span class="nx">report_array</span><span class="p">[</span><span class="nx">j</span><span class="p">][</span><span class="nx">k</span><span class="p">]).</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="nx">k</span><span class="o">&lt;</span><span class="nx">report_array</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">k</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">result</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">result</span><span class="p">[</span><span class="nx">k</span><span class="p">]);</span>
+  <span class="p">}</span>
+
+  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Other Sample AdWords Scripts for reporting.</p>
+<ul>
+<li><a href="https://developers.google.com/adwords/scripts/docs/solutions/search-query">Search Query Report</a></li>
+<li><a href="https://developers.google.com/adwords/scripts/docs/solutions/keyword-performance">Keyword Performance Report</a></li>
+<li><a href="https://developers.google.com/adwords/scripts/docs/solutions/ad-performance">Ad Performance Report</a></li>
+<li><a href="https://developers.google.com/adwords/scripts/docs/solutions/account-summary">Account Summary Report</a></li>
+</ul>
+<h2>AdNabu Reporting for AdWords</h2>
+<p>AdNabu simplifies the entire process of reporting. Within a few clicks, One can create a scheduled report which can run 
+at any time of day/week/month. These reports are mobile optimized and highly customizable as per need. Biggest advantages of
+AdNabu platform are</p>
+<ul>
+<li>Ability to schedule reports any time</li>
+<li>HTML formatted emails</li>
+<li>Ability to send to multiple email addresses</li>
+<li>Includes graphical overview of campaigns which can be segmented on day/week/month</li>
+<li>Highly customizable reports with all main variables available</li>
+</ul>
+<p>Below is a sample report sent through AdNabu's <a href="https://www.adnabu.com/products/report/creation" title="AdWords Reporting Tool">AdWords Report Creation Tool</a></p>
+<p><img alt="Sample AdNabu AdWords Campaign Performance Report" src="https://blog.adnabu.com/images/reports/sample_report.png" /></p>
+<p>Start your <a href="https://www.adnabu.com/plans/pricing/" title="AdWords Reporting Tool">free trial for AdWords Reporting Tool</a> today.</p><p>There are <a href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html#disqus_thread">comments</a>.</p>                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="https://adnabu.com/">AdNabu</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.facebook.com/adnabu">Facebook</a></li>
+                            <li><a href="https://plus.google.com/+AdnabuOfficial">Google+</a></li>
+                            <li><a href="https://twitter.com/adnabu">Twitter</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'adnabu';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
