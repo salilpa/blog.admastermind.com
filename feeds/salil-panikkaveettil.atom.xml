@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>AdNabu</title><link href="https://blog.adnabu.com/" rel="alternate"></link><link href="https://blog.adnabu.com/feeds/salil-panikkaveettil.atom.xml" rel="self"></link><id>https://blog.adnabu.com/</id><updated>2015-08-20T17:00:00+05:30</updated><entry><title>How to send automated adwords reports as email periodically</title><link href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html" rel="alternate"></link><updated>2015-08-20T17:00:00+05:30</updated><author><name>Salil Panikkaveettil</name></author><id>tag:blog.adnabu.com,2015-08-20:how-to-send-automated-adwords-reports-as-email-periodically.html</id><summary type="html">&lt;p&gt;Every marketer wants to be on top of their data as frequently as it is possible. In an extremely dynamic environment like 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>AdNabu</title><link href="https://blog.adnabu.com/" rel="alternate"></link><link href="https://blog.adnabu.com/feeds/salil-panikkaveettil.atom.xml" rel="self"></link><id>https://blog.adnabu.com/</id><updated>2015-09-08T19:00:00+05:30</updated><entry><title>How to find Statistical Significance in AdWords Reports</title><link href="https://blog.adnabu.com/how-to-find-statistical-significance-in-adwords-reports.html" rel="alternate"></link><updated>2015-09-08T19:00:00+05:30</updated><author><name>Salil Panikkaveettil</name></author><id>tag:blog.adnabu.com,2015-09-08:how-to-find-statistical-significance-in-adwords-reports.html</id><summary type="html">&lt;p&gt;AdWords or any performance oriented marketing platform is all about numbers. All your actions are based on how historically 
+campaigns, ad groups, keywords have performed. This data however can be quite deceiving if interpreted incorrectly. This 
+article explains the common mistakes a marketer makes while dealing with data and more specifically lack of significant data.&lt;/p&gt;
+&lt;h2&gt;Statistically Significant Data&lt;/h2&gt;
+&lt;p&gt;Different industries follow different methods to calculate statistical significance. Here is a 
+&lt;a href="https://en.wikipedia.org/wiki/Statistical_significance" title="Wiki article on statistical significance"&gt;wikipedia article on statistical significance&lt;/a&gt;.
+Statistical significance is extremely important in adwords to make any changes to your campaigns.&lt;/p&gt;
+&lt;p&gt;Lets say as a marketer, you are given the task of reducing the cost per conversion for your client and the report looks like something given below.&lt;/p&gt;
+&lt;h2&gt;Campaigns with statistical significance&lt;/h2&gt;
+&lt;p&gt;Nabu has 3 campaigns running for his hotel. The AdWords report for the last 30 days is as follows&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Campaign&lt;/th&gt;
+&lt;th&gt;Clicks&lt;/th&gt;
+&lt;th&gt;Cost&lt;/th&gt;
+&lt;th&gt;Cost per Conversion&lt;/th&gt;
+&lt;th&gt;Conversions&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hotel 1&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hotel 2&lt;/td&gt;
+&lt;td&gt;300&lt;/td&gt;
+&lt;td&gt;180&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hotel 3&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Looking at the above data, you made the following conclusion.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Hotel 1&lt;/code&gt; and &lt;code&gt;Hotel 2&lt;/code&gt; Campaigns are almost running at the same cost per conversion but &lt;code&gt;Hotel 3&lt;/code&gt; is running at a cost per conversion 
+which is much higher than the other 2. This usually means that there is good amount of improvement that can be done in reducing the cost 
+per conversion of &lt;code&gt;Hotel 3&lt;/code&gt; campaign, Which would lead to overall reduction in cost per conversion.&lt;/p&gt;
+&lt;p&gt;The above is a perfectly valid argument as there is enough data available to arrive at this conclusion. Now take a look at the following report.&lt;/p&gt;
+&lt;h2&gt;Campaigns with no statistical significance&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Campaign&lt;/th&gt;
+&lt;th&gt;Clicks&lt;/th&gt;
+&lt;th&gt;Cost&lt;/th&gt;
+&lt;th&gt;Cost per Conversion&lt;/th&gt;
+&lt;th&gt;Conversions&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hotel 1&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hotel 2&lt;/td&gt;
+&lt;td&gt;300&lt;/td&gt;
+&lt;td&gt;180&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hotel 3&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Here one cannot say with confidence that &lt;code&gt;Hotel 3&lt;/code&gt; is not performing well because of the lack of data. There have just been 2 conversions and this
+ data is too low to arrive at any meaningful conclusion&lt;/p&gt;
+&lt;h2&gt;Cheat sheet for statistical significance&lt;/h2&gt;
+&lt;p&gt;As a rule of thumb, look for campaigns with more than 10 conversions for any given period before coming to a conclusion. For 
+campaigns with less than 10 conversions, it makes lot more sense to look at a longer time period. if you were looking at last 30 days,
+have a look at last 90 days and see if the conversions is reaching 10. If you still cannot get to 10 conversions it is better to wait for more time 
+before jumping to any conclusions.&lt;/p&gt;
+&lt;p&gt;Related blog on : &lt;a href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html" title="automated adwords reporting"&gt;how to automate your adwords reporting&lt;/a&gt;&lt;/p&gt;</summary><category term="google adwords reports"></category><category term="statistical significance"></category></entry><entry><title>How to send automated adwords reports as email periodically</title><link href="https://blog.adnabu.com/how-to-send-automated-adwords-reports-as-email-periodically.html" rel="alternate"></link><updated>2015-08-20T17:00:00+05:30</updated><author><name>Salil Panikkaveettil</name></author><id>tag:blog.adnabu.com,2015-08-20:how-to-send-automated-adwords-reports-as-email-periodically.html</id><summary type="html">&lt;p&gt;Every marketer wants to be on top of their data as frequently as it is possible. In an extremely dynamic environment like 
 AdWords, Its important to be up to date with your campaigns almost daily. Let us look at the most common reports that AdWords 
 experts track and steps to automate them.&lt;/p&gt;
 &lt;h2&gt;AdWords Report Types&lt;/h2&gt;
@@ -50,7 +141,8 @@ AdWords Scripts are as follows&lt;/p&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;last_30_days_html&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;arrayToTable&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;last_30_days&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;titles&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Campaign Stats for Last 30 Days&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;content&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;last_30_days_html&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-  &lt;span class="nx"&gt;mail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;marketing@adnabu.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;AdWords Campaign Stats as on &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="nx"&gt;mail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;marketing@adnabu.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;AdWords Campaign Stats as on &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// change the email here&lt;/span&gt;
+  &lt;span class="c1"&gt;// one can add comma separated emails also like &amp;quot;marketing@adnabu.com, support@adnabu.com&amp;quot;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;getCurrentDate&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
@@ -208,6 +300,6 @@ AdNabu platform are&lt;/p&gt;
 &lt;h2&gt;Changes are live&lt;/h2&gt;
 &lt;p&gt;Your campaigns have now been successfully uploaded to your adwords account. For any support reach us at sales [at] AdNabu.com &lt;/p&gt;
 &lt;h2&gt;Reference&lt;/h2&gt;
-&lt;p&gt;This article is inspired from &lt;a href="https://support.google.com/adwords/editor/answer/30564?hl=en" title="import a csv file"&gt;Official Google AdWords article on how to import csv file&lt;/a&gt;.&lt;/p&gt;</summary><category term="google adwords editor"></category><category term="tutorial"></category></entry><entry><title>Hello World from AdNabu</title><link href="https://blog.adnabu.com/hello-world-from-adnabu.html" rel="alternate"></link><updated>2013-08-22T16:08:00+05:30</updated><author><name>Salil Panikkaveettil</name></author><id>tag:blog.adnabu.com,2013-08-22:hello-world-from-adnabu.html</id><summary type="html">&lt;p&gt;Online Marketing is an exciting industry. It has tons of unsolved, difficult and impactful problems. We are a startup aiming to solve some of them. We want to solve these problems at scale and want to help advertisers small and big.&lt;/p&gt;
-&lt;p&gt;As a part of our launch, we have created 50 &lt;a href="tag/google-adwords-campaigns.html" title="free adwords campaigns"&gt;free adwords campaigns&lt;/a&gt; for our users to download and use. these campaigns are built keeping in mind the best practises followed by AdWords professionals. &lt;/p&gt;
-&lt;p&gt;Download, use and share your valuable feedback&lt;/p&gt;</summary><category term="online marketing"></category></entry></feed>
+&lt;p&gt;This article is inspired from &lt;a href="https://support.google.com/adwords/editor/answer/30564?hl=en" title="import a csv file"&gt;Official Google AdWords article on how to import csv file&lt;/a&gt;.&lt;/p&gt;</summary><category term="google adwords editor"></category><category term="tutorial"></category></entry><entry><title>Hello World from AdNabu</title><link href="https://blog.adnabu.com/hello-world-from-adnabu.html" rel="alternate"></link><updated>2013-08-22T16:08:00+05:30</updated><author><name>Salil Panikkaveettil</name></author><id>tag:blog.adnabu.com,2013-08-22:hello-world-from-adnabu.html</id><summary type="html">&lt;p&gt;Online Marketing is an exciting industry. It has tons of unsolved &amp;amp; problems. We are a startup aiming to solve some of them. 
+We want to solve these problems at scale and want to help advertisers small and big.&lt;/p&gt;
+&lt;p&gt;Do check our &lt;a href="https://www.adnabu.com/" title="AdWords Software Tool"&gt;software for google AdWords&lt;/a&gt; created by team AdNabu.&lt;/p&gt;</summary><category term="online marketing"></category></entry></feed>

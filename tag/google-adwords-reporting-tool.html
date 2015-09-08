@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <nav><ul>
                     <li><a href="https://www.adnabu.com">AdNabu</a></li>
                     <li><a href="https://blog.adnabu.com/pages/about-us.html">About us</a></li>
-                    <li><a href="https://blog.adnabu.com/category/adwords.html">adwords</a></li>
+                    <li><a href="https://blog.adnabu.com/category/adwords-reports.html">adwords reports</a></li>
                     <li><a href="https://blog.adnabu.com/category/introduction.html">introduction</a></li>
                     <li><a href="https://blog.adnabu.com/category/tutorials.html">tutorials</a></li>
                 </ul></nav>
@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <address class="vcard author">
                 By                         <a class="url fn" href="https://blog.adnabu.com/author/salil-panikkaveettil.html">Salil Panikkaveettil</a>
         </address>
-<p>In <a href="https://blog.adnabu.com/category/adwords.html">adwords</a>. </p>
+<p>In <a href="https://blog.adnabu.com/category/adwords-reports.html">adwords reports</a>. </p>
 <p>tags: <a href="https://blog.adnabu.com/tag/google-adwords-reporting-tool.html">google adwords reporting tool</a> <a href="https://blog.adnabu.com/tag/adwords-scripts.html">adwords scripts</a> <a href="https://blog.adnabu.com/tag/automated-email.html">automated email</a> </p>
 </footer><!-- /.post-info --><p>Every marketer wants to be on top of their data as frequently as it is possible. In an extremely dynamic environment like 
 AdWords, Its important to be up to date with your campaigns almost daily. Let us look at the most common reports that AdWords 
@@ -96,7 +96,8 @@ AdWords Scripts are as follows</p>
   <span class="kd">var</span> <span class="nx">last_30_days_html</span> <span class="o">=</span> <span class="nx">arrayToTable</span><span class="p">(</span><span class="nx">last_30_days</span><span class="p">,</span> <span class="nx">titles</span><span class="p">,</span> <span class="s2">&quot;Campaign Stats for Last 30 Days&quot;</span><span class="p">);</span>
   <span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="nx">last_30_days_html</span><span class="p">;</span>
 
-  <span class="nx">mail</span><span class="p">(</span><span class="s2">&quot;marketing@adnabu.com&quot;</span><span class="p">,</span> <span class="s2">&quot;AdWords Campaign Stats as on &quot;</span> <span class="o">+</span> <span class="nx">date</span><span class="p">,</span> <span class="nx">content</span><span class="p">);</span>
+  <span class="nx">mail</span><span class="p">(</span><span class="s2">&quot;marketing@adnabu.com&quot;</span><span class="p">,</span> <span class="s2">&quot;AdWords Campaign Stats as on &quot;</span> <span class="o">+</span> <span class="nx">date</span><span class="p">,</span> <span class="nx">content</span><span class="p">);</span> <span class="c1">// change the email here</span>
+  <span class="c1">// one can add comma separated emails also like &quot;marketing@adnabu.com, support@adnabu.com&quot;</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">getCurrentDate</span><span class="p">(){</span>
