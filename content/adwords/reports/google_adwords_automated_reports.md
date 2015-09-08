@@ -1,6 +1,6 @@
 Title: How to send automated adwords reports as email periodically
 Date: 2015-08-20 17:00
-Category: adwords
+Category: adwords reports
 Tags: google adwords reporting tool, adwords scripts, automated email
 Author: Salil Panikkaveettil
 Summary: Various ways to schedule adwords reports and their respective advantages and disadvantages.
@@ -66,7 +66,8 @@ function main() {
   var last_30_days_html = arrayToTable(last_30_days, titles, "Campaign Stats for Last 30 Days");
   var content = last_30_days_html;
   
-  mail("marketing@adnabu.com", "AdWords Campaign Stats as on " + date, content);
+  mail("marketing@adnabu.com", "AdWords Campaign Stats as on " + date, content); // change the email here
+  // one can add comma separated emails also like "marketing@adnabu.com, support@adnabu.com"
 }
 
 function getCurrentDate(){
